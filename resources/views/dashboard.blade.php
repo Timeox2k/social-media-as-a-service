@@ -64,11 +64,9 @@
                 <div class="flex items-center space-x-4">
                     <img class="h-10 w-10 rounded-full border border-gray-200 dark:border-gray-700"
                          src="https://i.pravatar.cc/40" alt="Profile Photo">
-                    <input
-                        type="text"
-                        placeholder="What's on your mind, {{ auth()->user()->first_name }}?"
-                        class="bg-gray-50 dark:bg-gray-800 rounded-full pl-4 pr-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500 w-full text-gray-900 dark:text-gray-100 placeholder-gray-500 dark:placeholder-gray-400"
-                    />
+                    <textarea
+                        class="bg-gray-50 dark:bg-gray-800 rounded-xl pl-4 pr-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500 w-full text-gray-900 dark:text-gray-100 placeholder-gray-500 dark:placeholder-gray-400">What's on your mind, {{ auth()->user()->first_name }}?
+                    </textarea>
                 </div>
                 <div
                     class="flex justify-start items-center mt-4 border-t border-gray-200 dark:border-gray-700 pt-4 space-x-2">
