@@ -80,6 +80,7 @@
                         <span class="text-sm font-medium">Feeling/Activity</span>
                     </button>
                 </div>
+                <button class="bg-blue-500 text-white rounded-lg px-4 py-2 mt-4 focus:outline-none">Post</button>
             </div>
         </div>
 
