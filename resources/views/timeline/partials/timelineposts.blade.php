@@ -13,7 +13,7 @@
 <div class="space-y-6">
     @foreach($posts as $post)
         <div
-            class="bg-white dark:bg-gray-900 shadow-lg mt-6 rounded-lg overflow-hidden">
+            class="bg-white dark:bg-gray-900 shadow-lg mt-6 rounded-lg overflow-hidden mb-3">
             <!-- User Info -->
             <div class="flex items-center p-4 border-b border-gray-200 dark:border-gray-700">
                 <img class="h-12 w-12 rounded-full border border-gray-300 dark:border-gray-600"
