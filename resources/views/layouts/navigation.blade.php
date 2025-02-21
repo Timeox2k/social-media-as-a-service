@@ -35,7 +35,9 @@
                 <div class="ml-4 relative">
                     <button @click="dropdownOpen = !dropdownOpen"
                             class="flex text-sm border-2 border-transparent rounded-full focus:outline-none focus:border-gray-800 dark:focus:border-gray-100">
-                        <img class="h-8 w-8 rounded-full" src="https://i.pravatar.cc/40" alt="Profile Photo">
+                        <img class="h-8 w-8 rounded-full" src="{{
+    \App\Http\Controllers\ProfileController::getProfilePicturePath(auth()->user())
+}}" alt="Profile Picture">
                     </button>
                     <div
                         x-show="dropdownOpen"

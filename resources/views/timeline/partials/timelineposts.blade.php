@@ -17,7 +17,7 @@
             <!-- User Info -->
             <div class="flex items-center p-4 border-b border-gray-200 dark:border-gray-700">
                 <img class="h-12 w-12 rounded-full border border-gray-300 dark:border-gray-600"
-                     src="{{ $post->user->profile_photo_url ?? 'https://i.pravatar.cc/40' }}" alt="Profile Photo">
+                     src="{{\App\Http\Controllers\ProfileController::getProfilePicturePath($post->user)}}" alt="Profile Picture">
                 <div class="ml-4">
                     <div class="text-gray-900 dark:text-gray-100 font-semibold text-lg">
                         {{ $post->user->name ?? 'Unknown User' }}

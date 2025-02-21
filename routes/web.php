@@ -21,4 +21,7 @@ Route::middleware('auth')->group(function () {
 //Route to post a new post
 Route::post('/posts', [PostController::class, 'store'])->name('posts.store');
 
+//profile-photo.update
+Route::post('/profile-photo', [ProfileController::class, 'updatePhoto'])->name('profile-photo.update');
+
 require __DIR__.'/auth.php';
